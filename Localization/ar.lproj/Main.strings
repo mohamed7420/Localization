@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Welcome"; ObjectID = "4lE-9K-d6d"; */
+"4lE-9K-d6d.text" = "مرحبا";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "Olt-Op-nf3"; */
+"Olt-Op-nf3.normalTitle" = "تسجيل الدخول";
+
+/* Class = "UITextField"; placeholder = "username"; ObjectID = "iDa-Pu-0UF"; */
+"iDa-Pu-0UF.placeholder" = "اسم المستخدم";
