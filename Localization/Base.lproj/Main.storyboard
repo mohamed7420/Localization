@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Localization" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeView" id="BYZ-38-t0r" customClass="ViewController" customModule="Localization" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,11 +50,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TJi-ep-t7v">
+                                <rect key="frame" x="343" y="87" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.7953497423" blue="0.3941583306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="iDa-Pu-0UF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2GG-Rd-Ob0"/>
                             <constraint firstItem="Olt-Op-nf3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="Q59-YE-New"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TJi-ep-t7v" secondAttribute="trailing" constant="22" id="QQi-mX-HtO"/>
+                            <constraint firstItem="TJi-ep-t7v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="S39-61-4bo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l1W-eX-Boq" secondAttribute="trailing" constant="20" id="Tlw-1f-Lbc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iDa-Pu-0UF" secondAttribute="trailing" constant="20" id="X7l-pV-b79"/>
                             <constraint firstItem="l1W-eX-Boq" firstAttribute="top" secondItem="Olt-Op-nf3" secondAttribute="bottom" constant="67" id="mW1-Yz-xOx"/>
@@ -69,6 +74,7 @@
                     </view>
                     <connections>
                         <outlet property="apiReultLabel" destination="l1W-eX-Boq" id="P5K-BX-lJe"/>
+                        <outlet property="langSwitch" destination="TJi-ep-t7v" id="WT1-Zz-jDc"/>
                         <outlet property="usernameTF" destination="iDa-Pu-0UF" id="dCW-xx-YSi"/>
                         <outlet property="welcomeLabel" destination="4lE-9K-d6d" id="g6L-ZN-uGZ"/>
                     </connections>
